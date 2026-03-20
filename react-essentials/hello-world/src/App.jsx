@@ -1,12 +1,7 @@
 import "./App.css";
+import Welcome from "./Welcome";
+import Button from "./Button";
 
-function Welcome() {
-  return <h2>Hello Dan</h2>;
-}
-
-function Button() {
-  return <button>Click me</button>;
-}
 function App() {
   return (
     <div className="App">
