@@ -1,11 +1,14 @@
+import React from "react";
 import "./App.css";
 import { Welcome } from "./Welcome";
 import { Button } from "./Button";
+import { Hello, HelloWithoutJSX } from "./Hello";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
+      <Hello />
+      <HelloWithoutJSX />
       <Welcome />
       <Button />
     </div>
