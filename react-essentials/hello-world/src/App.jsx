@@ -1,6 +1,6 @@
 import "./App.css";
-import Welcome from "./Welcome";
-import Button from "./Button";
+import { Welcome } from "./Welcome";
+import { Button } from "./Button";
 
 function App() {
   return (
