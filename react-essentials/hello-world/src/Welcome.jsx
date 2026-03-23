@@ -1,4 +1,7 @@
-export const Welcome = () => {
-  return <h2>Hello Dan</h2>;
+export const Welcome = ({ name, alias }) => {
+  return (
+    <h2>
+      Hello {name} a.k.a. {alias}!
+    </h2>
+  );
 };
-export default Welcome;

@@ -1,23 +1,32 @@
-import React from "react";
-import "./App.css";
 import { Welcome } from "./Welcome";
 import { Button } from "./Button";
 import { Hello, HelloWithoutJSX } from "./Hello";
 import { UserProfile } from "./UserProfile";
 import { ContactForm } from "./ContactForm";
 import { StyledForm } from "./StyledForm";
+import { CandidateProfile } from "./CandidateProfile";
+import { Product } from "./Product";
 import "./App.css";
 
 <App className="css"></App>;
 function App() {
   return (
     <div className="App">
+      <Product
+        title="Laptop"
+        price={999.99}
+        inStock={true}
+        categories={["Electronics", "Computers"]}
+      />
+      <Welcome name="Bruce" alias="Batman" />
+      <Welcome name="Clark" alias="Superman" />
+      <Welcome name="Diana" alias="Wonder Woman" />
+      <CandidateProfile />
       <StyledForm />
       <UserProfile />
       <ContactForm />
       <Hello />
       <HelloWithoutJSX />
-      <Welcome />
       <Button />
     </div>
   );
