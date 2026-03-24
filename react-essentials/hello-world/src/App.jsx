@@ -6,17 +6,23 @@ import { ContactForm } from "./ContactForm";
 import { StyledForm } from "./StyledForm";
 import { CandidateProfile } from "./CandidateProfile";
 import { Product } from "./Product";
+import { Greeting } from "./Greeting";
 import "./App.css";
 
 <App className="css"></App>;
 function App() {
   return (
     <div className="App">
+      <Greeting name="Bruce" Greeting="Good Morning" />
+      <Greeting message="Welcome!" />
+      <Greeting name="Diana" />
+      <Greeting />
+
       <Product
         title="Laptop"
         price={999.99}
         inStock={true}
-        categories={["Electronics", "Computers"]}
+        categories={["Electronics", "Computers", "Gaming"]}
       />
       <Welcome name="Bruce" alias="Batman" />
       <Welcome name="Clark" alias="Superman" />
