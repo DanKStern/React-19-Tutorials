@@ -8,12 +8,27 @@ import { CandidateProfile } from "./CandidateProfile";
 import { Product } from "./Product";
 import { Greeting } from "./Greeting";
 import { CardWrapper } from "./CardWrapper";
+import { UserDetails } from "./UserDetails";
 import "./App.css";
 
 <App className="css"></App>;
 function App() {
   return (
     <div className="App">
+      <UserDetails
+        name="Bruce Wayne"
+        isOnline={true}
+        isNewUser={true}
+        isPremium={true}
+        role="admin"
+      />
+      <UserDetails
+        name="Clark Kent"
+        isOnline={true}
+        hideOffline={true}
+        role="vip"
+      />
+
       <CardWrapper title="User Information">
         <p>Bruce Wayne</p>
         <p>batman@gothamcity.com</p>
