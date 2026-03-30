@@ -1,4 +1,4 @@
-import { Welcome } from "./Welcome";
+/* import { Welcome } from "./Welcome";
 import { Button } from "./Button";
 import { Hello, HelloWithoutJSX } from "./Hello";
 import { UserProfile } from "./UserProfile";
@@ -8,14 +8,14 @@ import { CandidateProfile } from "./CandidateProfile";
 import { Product } from "./Product";
 import { Greeting } from "./Greeting";
 import { CardWrapper } from "./CardWrapper";
-import { UserDetails } from "./UserDetails";
+import { UserDetails } from "./UserDetails"; */
+import { ProductList } from "./ProductList";
 import "./App.css";
-
-<App className="css"></App>;
 function App() {
   return (
     <div className="App">
-      <UserDetails
+      <ProductList></ProductList>
+      {/*    <UserDetails
         name="Bruce Wayne"
         isOnline={true}
         isNewUser={true}
@@ -44,8 +44,8 @@ function App() {
         price={999.99}
         inStock={true}
         categories={["Electronics", "Computers", "Gaming"]}
-      />
-      <Welcome name="Bruce" alias="Batman" />
+      /> */}
+      {/* <Welcome name="Bruce" alias="Batman" />
       <Welcome name="Clark" alias="Superman" />
       <Welcome name="Diana" alias="Wonder Woman" />
       <CandidateProfile />
@@ -54,7 +54,7 @@ function App() {
       <ContactForm />
       <Hello />
       <HelloWithoutJSX />
-      <Button />
+      <Button /> */}
     </div>
   );
 }
