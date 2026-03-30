@@ -1,19 +1,18 @@
 export const ProductList = () => {
+  const products = [
+    { id: 1, name: "Laptop", price: 999.99 },
+    { id: 2, name: "Smartphone", price: 499.99 },
+    { id: 3, name: "Tablet", price: 299.99 },
+  ];
   return (
     <div>
       <h2>Our Products</h2>
-      <div>
-        <h3>Laptop</h3>
-        <p>Price: $999.99</p>
-      </div>
-      <div>
-        <h3>Smartphone</h3>
-        <p>Price: $499.99</p>
-      </div>
-      <div>
-        <h3>Tablet</h3>
-        <p>Price: $299.99</p>
-      </div>
+      {products.map((product) => (
+        <div key={product.id}>
+          <h3>{product.name}</h3>
+          <p>Price: ${product.price.toFixed(2)}</p>
+        </div>
+      ))}
     </div>
   );
 };
